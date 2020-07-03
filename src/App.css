@@ -1,0 +1,192 @@
+.App {
+  text-align: center;
+}
+
+.Checkboxes {
+  border: solid 1px black;
+  border-radius: 15px;
+  float: left;
+  width: 35%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  text-align: justify;
+
+  margin-left: 2.2%;
+  margin-top: 15px;
+
+  margin-bottom: 15px;
+}
+
+.checkboxtitle{
+  width: 20%;
+  border-radius: 5px;
+  float: center;
+  color: darkblue;
+  text-align: center;
+  padding: 1px;
+
+  margin-left: 40%;
+  margin-top: -2%;
+
+}
+
+.buttonright{
+  height: 30px;
+  width: 100px;
+  border: 2px solid blue;
+  margin: 15px;
+
+  color: black;
+  background-color: lightcyan;
+  border-radius: 5px;
+  font-size: medium;
+  font-style: italic;
+
+  float: right;
+  margin-right: 10%;
+
+}
+
+.buttonleft{
+  height: 30px;
+  width: 100px;
+  border: 2px solid blue;
+  margin: 15px;
+
+  color: black;
+  background-color: lightcyan;
+  border-radius: 5px;
+  font-size: medium;
+  font-style: italic;
+
+  float: left;
+  margin-left: 10%;
+  
+}
+
+.td{
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.mapbox{
+  border: solid 1px black;
+  border-radius: 15px;
+  float: right;
+  width: 55%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  margin-right: 2.3%;
+  margin-top: 15px;
+
+}
+
+.maptitle{
+  width: 20%;
+  border-radius: 5px;
+  float: center;
+  color: darkblue;
+  text-align: center;
+  padding: 1px;
+
+  margin-left: 40%;
+  margin-top: -1.5%;
+}
+
+.maprender{
+  
+  border: none;
+  border-radius: 15px;
+  width: 80%;
+  margin-left: 10%;
+  padding: 0px;
+  
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.checkbox {
+  color: blueviolet;
+  border: solid 1px red;
+  border-radius: 5px;
+
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.textbox{
+  float: center;
+}
+
+.patient{
+  border: 1px solid black;
+  border-radius: 15px;
+
+  margin-left: 10%;
+  padding: 0px 50px 50px 50px;
+
+  float: left;
+  text-align: left;
+
+  width: 30%;
+}
+
+.resource{
+  border: 1px solid black;
+  border-radius: 15px;
+
+  margin-right: 10%;
+  padding: 0px 50px 50px 50px;
+
+  float: right;
+  text-align: left;
+
+  width: 30%;
+}
+
+.resourcetitle{
+  text-align: center;
+  color: blue;
+}
+
+.patienttitle{
+  text-align: center;
+  color: blue;
+}
