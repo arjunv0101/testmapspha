@@ -213,35 +213,43 @@ export default class EmailComponent extends Component{
 
 
                 <br></br>
-                <br></br>
-                <br></br>
 
 
                 <div>
                     <div className="patient">
-                        <h2 className="patienttitle">Email Template</h2>
+                        <h2 className="patienttitle">      Email Template</h2>
 
+                        
                         <input name="prefix" type="text" onChange={this.changeprefix}/>
                         <label for="prefix">      Prefix</label>
-                        <br></br><br></br>
-
+                        <br></br>
+                        <br></br>
+                        
+                        
                         <input name="name" type="text" onChange={this.changepatientname}/>
                         <label for="name">      Patient Last Name</label>
-                        <br></br><br></br>
-
+                        <br></br>
+                        <br></br>
+                        
+                        
                         <input name="phaname" type="text" onChange={this.changephaname}/>
                         <label for="phaname">      PHA Name</label>
-                        <br></br><br></br>
+                        <br></br>
+                        <br></br>
 
+                        
                         <input name="phaemail" type="text" onChange={this.changephaemail}/>
                         <label for="phaemail">      PHA Email</label>
-                        <br></br><br></br>
+                        <br></br>
+                        <br></br>
 
+                        
                         <input name="date" type="text" onChange={this.changedate}/>
                         <label for="date">      Date</label>
-                        <br></br><br></br>
+                        <br></br>
+                        <br></br>
 
-                        <input name="intro" type="text" size="20" onChange={this.changeintroline}/>
+                        <textarea name="intro" type="text" rows="10" cols="40" onChange={this.changeintroline}/>
                         <label for="intro">      Introduce Resources</label>
                         <br></br><br></br>
 
@@ -255,7 +263,7 @@ export default class EmailComponent extends Component{
                         <label for="resname">      Resource Name</label>
                         <br></br><br></br>
 
-                        <input name="resadd" type="text" onChange={this.changeresaddress}/>
+                        <textarea name="resadd" type="text" rows="5" cols ="40" onChange={this.changeresaddress}/>
                         <label for="resadd">      Resource Address</label>
                         <br></br><br></br>
 
@@ -275,7 +283,7 @@ export default class EmailComponent extends Component{
                         <label for="reshours">      Resource Hours</label>
                         <br></br><br></br>
 
-                        <input name="resdesc" type="text" onChange={this.changeresdescription}/>
+                        <textarea name="resdesc" type="text" rows="7" cols="40" onChange={this.changeresdescription}/>
                         <label for="resdesc">      Resource Description</label>
                         <br></br><br></br>
 
