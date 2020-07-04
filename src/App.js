@@ -9,10 +9,12 @@ function App() {
   return (
     <div className="App">
       <h2 className="App-header">SCOPE PHA Immediate Resource Distribution Alpha</h2>
-      <Survey />
+      
       <MapPicker />
       <br></br>
       <EmailComponent />
+
+      <h6 className="App-header">Developed by Arjun Verma</h6>
 
     </div>
   );
