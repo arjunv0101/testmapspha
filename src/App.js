@@ -8,18 +8,13 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      
         <h2 className="App-header">SCOPE PHA Immediate Resource Distribution Alpha</h2>
         
         <MapPicker />
         <br></br>
         <EmailComponent />
-      </div>
-      <div>
-        <h6 className="App-header">Developed by Arjun Verma</h6>
-      </div>
       
-
     </div>
   );
 }
