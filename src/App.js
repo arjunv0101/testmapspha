@@ -4,8 +4,15 @@ import MapPicker from './Components/mappicker.component.js';
 import Survey from './Components/survey.component.js';
 import EmailComponent from './Components/email.component.js';
 
-function App() {
+import ReactGA from 'react-ga';
 
+function initializeAnalytics(){
+  ReactGA.initialize("UA-171631832-1");
+  ReactGA.pageview("/HomePage");
+}
+
+function App() {
+  initializeAnalytics();
   return (
     <div className="App">
       <div>
