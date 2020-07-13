@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
+
+
 
 export default class EmailComponent extends Component{
 
@@ -48,6 +51,20 @@ export default class EmailComponent extends Component{
             finalcontent: "",
 
         }
+    }
+
+    emailHandler(){
+        ReactGA.event({
+            category: "Submission",
+            action: 'Email Submitted'
+        })
+    }
+
+    resourceHandler(){
+        ReactGA.event({
+            category: "Submission",
+            action: 'Resource Submitted'
+        })
     }
 
     changeprefix(e){
@@ -151,6 +168,8 @@ export default class EmailComponent extends Component{
             res_description: "",
         });
 
+        this.resourceHandler();
+
         console.log(res);
 
     }
@@ -180,6 +199,8 @@ export default class EmailComponent extends Component{
         let end = "Once you have accessed these resources, I would greatly appreciate if you complete the following short survey where you can give feedback about your experience: bit.ly/phafus";
 
         end = end + " In two/three weeks I will be emailing you again to ask for your satisfaction with the resources provided. Please feel free to email me at " + this.state.PHA_email + " if you have any questions or need additional resources."
+
+        this.emailHandler();
 
         this.setState({
             finalcontent: open + "\n" + "\n" + intro + "\n" + "Resources: " + "\n" + resources + "\n" + end
